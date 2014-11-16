@@ -1,0 +1,13 @@
+# Site settings
+title: yinups
+
+# Build settings
+auto: true                  #文件更新，站点更新
+markdown: rdiscount         #模版使用rdiscount
+permalink: /:title.html     #url格式
+
+pygments: true              #语法高亮
+paginate: 8                 #分页
+url: http://yinups.com
+feed: /atom.xml
+author_info: <a href="http://yinups.com/">yinups</a>
