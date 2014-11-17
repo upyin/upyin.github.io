@@ -5,7 +5,7 @@ url: http://yinups.com
 
 # Build settings
 auto: true                  #文件更新，站点更新
-markdown: rdiscount         #模版使用rdiscount
+markdown: kramdown          #模版使用kramdown
 permalink: /:title.html     #url格式
 
 pygments: true              #语法高亮
