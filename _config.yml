@@ -6,7 +6,7 @@ url: http://yinups.com
 # Build settings
 auto: true                  #文件更新，站点更新
 markdown: kramdown          #模版使用kramdown
-permalink: /:title.html     #url格式
+permalink: /blog/:title.html     #url格式
 
 pygments: true              #语法高亮
 paginate: 8                 #分页
