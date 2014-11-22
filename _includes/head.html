@@ -1,0 +1,17 @@
+<head>
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+	<!-- meta -->
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width,inital-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="keywords" content="{% if page.tags %}{{ page.tags }}{% else %}{{ site.tags }}{% endif %}" />
+	<!-- link/canonical -->
+	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}/" />
+	<!-- link/css -->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+	<!-- script/javascript -->
+	<script type="text/javascript" src="/javascripts/jquery.js"></script>
+	<script type="text/javascript" src="/javascripts/main.js"></script>
+</head>

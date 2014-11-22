@@ -1,12 +1,15 @@
 # Site settings 站点变量
+name:YINUPS
 author: yinups
 motto: Nothing is impossible.
 url: http://yinups.com
+description:this is yinups's personal blog web.
+tags:yinups blog upyin yinshangsheng 
 
 # Build settings
-auto: true                  #文件更新，站点更新
-markdown: kramdown          #模版使用kramdown
-permalink: /blog/:title.html     #url格式
+auto: true                  	#文件更新，站点更新
+markdown: kramdown          	#模版使用kramdown
+permalink: /blog/:title.html    #url格式
 
 pygments: true              #语法高亮
 paginate: 8                 #分页
