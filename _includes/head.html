@@ -6,12 +6,11 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-touch-fullscreen" content="YES" />
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-	<meta name="keywords" content="{% if page.tags %}{{ page.tags }}{% else %}{{ site.tags }}{% endif %}" />
+	<meta name="keywords" content="{% if page.tag %}{{ page.tag }}{% else %}{{ site.tag }}{% endif %}" />
 	<!-- link/canonical -->
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}/" />
 	<!-- link/css -->
 	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
 	<!-- script/javascript -->
-	<script type="text/javascript" src="/javascripts/jquery.js"></script>
 	<script type="text/javascript" src="/javascripts/main.js"></script>
 </head>

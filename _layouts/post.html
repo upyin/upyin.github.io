@@ -1,0 +1,13 @@
+---
+layout: default
+hclass1: selected
+---
+<div class="post">
+	<header class="post-header">
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.category }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ page.date | date: "%b %-d, %Y" }}</p>
+	</header>
+	<article class="post-content">
+		{{ content }}
+	</article>
+</div>
