@@ -110,7 +110,7 @@ a{
 		-o-animation: photo 3s linear infinite;
 	}
 	.site-nav{
-		margin-top: 23%;
+		margin-top: 13%;
 	}
 	.site-ul li{
 		color: #FFF;
@@ -129,6 +129,19 @@ a{
 	.site-ul li.selected{
 		color: #E01E43;
 		text-shadow: 3px 2px 2px #666;
+	}
+	.site-name,.site-motto{
+		text-align: center;
+		color: #eee;
+	}
+	.site-name{
+		font-size: 20px;
+		line-height: 20px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.site-motto{
+		font-size: 12px;
 	}
 	/*default styles*/
 	.page-content{
@@ -211,11 +224,11 @@ a{
 	/*header styles*/
 	.site-header{
 		width: 100%;
-		height: 115px;
+		height: 110px;
 		position: fixed;
 		top: 0;
 		left: 0;
-		text-align: center;
+		text-align: left;
 		background-image: url("/images/headerbkS.jpg");
 		background-size: 100% 100%;
 	}
@@ -227,14 +240,16 @@ a{
 		-webkit-border-radius: 25px;
 		-moz-border-radius: 25px;
 		-o-border-radius: 25px;
-		display: block;
+		display: inline-block;
 		margin-top: 10px;
 		margin-left: 15px;
 		background-image: url("/images/photo.jpg");
 		background-size: 100%;
+		vertical-align: middle;
 	}
 	.site-nav{
 		margin-top: 15px;
+		text-align: center;
 	}
 	.site-ul li{
 		color: #FFF;
@@ -246,10 +261,20 @@ a{
 		color: #E01E43;
 		text-shadow: 3px 2px 2px #666;
 	}
+	.site-name{
+		color: #eee;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 15px;
+		margin: 0;
+	}
+	.site-motto{
+		display: none;
+	}
 	/*default styles*/
 	.page-content{
 		width: 100%;
-		margin-top: 115px;
+		margin-top: 110px;
 	}
 	.wrap{
 		width: 80%;
