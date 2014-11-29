@@ -7,20 +7,41 @@ html{
 	color:#000;
 	background:#FFF;
 }
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,blockquote,th,td{
+body,div,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,blockquote,th,td{
 	margin:0;
 	padding:0;
+}
+dl{
+	margin-left: 3em;
+}
+dt{
+	padding: 8px 0;
+}
+dd{
+	padding: 3px 0;
 }
 table{
 	border-collapse:collapse;
 	border-spacing:0;
 }
 fieldset,img{
-	border:0;
+	border:10px solid #ccc;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
 }
-address,caption,cite,code,dfn,em,strong,th,var{
+address,caption,cite,code,dfn,em,th,var{
 	font-style:normal;
 	font-weight:normal;
+}
+strong{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 15px;
 }
 li{
 	list-style:none;
@@ -57,7 +78,7 @@ textarea{
 	resize:none;
 }
 a{
-	color: #000;
+	color: #1683E6;
 	text-decoration: none;
 }
 
@@ -332,7 +353,7 @@ a{
 	}
 	.post-content{
 		text-align: left;
-		font-size: 14px;
+		font-size: 15px;
 	}
 	/*contact styles*/
 	.contact section{
@@ -372,4 +393,18 @@ a{
 .footer-ul li{
 	line-height: 30px;
 	display: inline-block;
+}
+/*post blog styles*/
+.post-section{
+	padding: 5px;
+	margin: 5px;
+}
+h1.post-section{
+	padding: 5px;
+	margin: 5px;
+	font-size: 18px;
+}
+p.post-section{
+	text-indent: 2em;
+	line-height: 23px;
 }
