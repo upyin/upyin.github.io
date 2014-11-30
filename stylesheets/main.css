@@ -156,7 +156,7 @@ a{
 	}
 	.site-name,.site-motto{
 		text-align: center;
-		color: #eee;
+		color: #138CB1;
 		display: inline-block;
 	}
 	.site-name{
@@ -290,20 +290,21 @@ a{
 		display: inline-block;
 		margin: 0;
 		vertical-align: middle;
+		width: 78%;
 	}
 	.site-name{
-		color: #eee;
+		color: #138CB1;
 		display: block;
-		font-size: 15px;
+		font-size: 13px;
 		line-height: 15px;
-		margin: 0;
+		margin: 0 5px;
 		text-align: left;
 	}
 	.site-motto{
-		display: inline-block;
-		font-size: 12px;
-		color: #eee;
-		text-align: center;
+		display: none;
+		font-size: 11px;
+		color: #1683E6;
+		text-align: left;
 	}
 	/*default styles*/
 	.page-content{

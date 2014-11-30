@@ -77,16 +77,18 @@ category: 随笔、工具
 	<p class="post-section">
 		Jekyll基本结构：
 		<pre>
-			|--_config.yml
-			|--_includes
-			|--_layouts
-			|  |--default.html
-			|  `--post.html
-			|--_posts
-			|  |--2014-11-23-my-blog.html(或者md,texttile)
-			|  `--2014-11-23-other-blog.md
-			|--_site
-			`--index.html
+			<code class="language-bash">
+	|--_config.yml
+	|--_includes
+	|--_layouts
+	|  |--default.html
+	|  `--post.html
+	|--_posts
+	|  |--2014-11-23-my-blog.html(或者md,texttile)
+	|  `--2014-11-23-other-blog.md
+	|--_site
+	`--index.html
+			</code>
 		</pre>
 		简单介绍下这些文件或文件夹的作用：
 		<dl>
@@ -120,11 +122,11 @@ highlighter: pygments       #语法高亮
 		使用Jekyll：
 		<pre>
 			<code class="language-bash">
-				~ $ gem install jekyll
-				~ $ jekyll new myblog
-				~ $ cd myblog
-				~/myblog $ jekyll serve
-				# => Now brower to http://localhost:4000
+	~ $ gem install jekyll
+	~ $ jekyll new myblog
+	~ $ cd myblog
+	~/myblog $ jekyll serve
+	# => Now brower to http://localhost:4000
 			</code>
 		</pre>
 	</p>
@@ -132,16 +134,18 @@ highlighter: pygments       #语法高亮
 		简单实用Git（将本地开发的内容同步到GitHub上）:
 		<pre>
 			<code class="language-bash">
-				~ $ git add .
-				~ $ git commit -m "注释"
-				~ $ git push origin master
+	~ $ git add .
+	~ $ git commit -m "注释"
+	~ $ git push origin master
 			</code>
 		</pre>
 	</p>
 	<p class="post-section">
 		<strong>GitHub支持域名的绑定</strong>。可以登陆<a href="http://www.net.cn" target="_blank">万网</a>，注册一个你喜欢的域名。然后在GitHub项目中新建一个名为CNAME的文件，内容如下：
 		<pre>
-			<code class="language-bash">你的域名.com</code>
+			<code class="language-bash">
+	你的域名.com
+			</code>
 		</pre>
 		解析你的域名，万网提供域名解析的功能。解析时，需要添加A记录到<strong>192.30.252.153 and 192.30.252.154</strong>可能会有变动（<a href="https://help.github.com/articles/my-custom-domain-isn-t-working/">点击这里查看</a>）。解析成功几分钟后，便可以使用你的域名访问你的博客啦。
 	</p>
