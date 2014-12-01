@@ -5,19 +5,20 @@ description: 使用li元素达到list－style相对文本垂直居中的效果
 tag: li、list-style、垂直居中
 category: 技术、问题
 ---
-<p class="post-section">
+<section class="post-section">
+<p>
 	在学习中，有这样一个需求：要使得li元素的圆点适中位于文本的垂直居中的效果，以及文本换行的时候不会出现的li元素圆点的下方，即如下的一个效果。
 	<img src="/images/20141124useli/uselist.png">
 	实现的代码如下：
 	<pre>
 	html部分：
-		<code class="language-markup">
+	<code class="language-markup">
 	&lt;ul&gt;
 	  &lt;li&gt;&lt;span&gt;li内容&lt;/span&gt;&lt;/li&gt;
 	&lt;/ul&gt;
-		</code>
+	</code>
 	css部分：
-		<code class="language-css">
+	<code class="language-css">
 	li{
 	  list-style-type:disc;
 	  list-style-position:outside;
@@ -26,6 +27,7 @@ category: 技术、问题
 	  display:inline-block;
 	  vertical-align:middle;
 	}
-		</code>
+	</code>
 	</pre>
 </p>
+</section>

@@ -2,9 +2,52 @@
 layout: post
 title: typeof与instanceof 的区别与使用
 description: typeof与instanceof的区别与使用
-tag: typeof、instanceof
+tag: typeof、instanceof、undefined、null、boolean、string、number、object
 category: 总结、技术
 ---
-<p class="post-section">
-	在讲typeof和instanceof之前，还是要先讲下javascript中的几种数据类型。
-</p>
+<section class="post-section">
+	<p>
+		在讲typeof和instanceof之前，还是要先讲下JavaScript中的几种数据类型。JavaScript有5种简单的数据类型（基本类型）：Undefined、Null、Boolean、Number和String，还有一种复杂的数据类型－Object。
+	</p>
+</section>
+<section class="post-section">
+	<h1>Undefined类型</h1>
+	<p>Undefined类型的值为undefined。当使用var声明变量但为对其初始化时，这个变量的值即为undefined：</p>
+	<pre>
+	<code class="language-javascript">
+	var a;
+	console.log(a == undefined);//true
+	</code>
+	</pre>
+</section>
+<section class="post-section">
+	<h1>Null类型</h1>
+	<p>Null类型的值为null。从逻辑角度看，null值表示一个空对象指针，因此，使用typeof检测null时会返回“object”：</p>
+	<pre>
+	<code class="language-javascript">
+	var a = null;
+	console.log(typeof a);//"object"
+	</code>
+	</pre>
+	<p>实际上，undefined值是派生自null值的，因此ECMA-262规定对它们的相等性测试要返回true</p>
+	<pre>
+	<code class="language-javascript">
+	console.log(undefined == null);//true
+	</code>
+	</pre>
+	<p>尽管null和undefined有这样的关系，但它们的用途完全不同。无论在什么情况下都没必要把一个变量的值显示的设置为undefined，可是同样的规则对null并不适用。</p>
+</section>
+<section class="post-section">
+	<h1>Boolean类型</h1>
+	<p>Boolean类型的值有两个，true和false。这两个值与数字值不是一回事，因此true不一定等于1，而false不一定等于0。可以调用类型转换函数(Boolean())讲任意类型的值转换为对应的Boolean类型的值：</p>
+	<pre>
+	<code class="language-markup">
+	数据类型		转换为true的值		转换为false的值
+	Boolean     true				false
+	String		任何非空字符串		空字符串
+	Number		任何非0数字值			0和NaN
+	Object      任何对象				null
+	Undefined   n/a(不适用)			undefined
+	</code>
+	</pre>
+</section>

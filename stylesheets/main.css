@@ -87,6 +87,7 @@ a{
 	/*header styles*/
 	.site-header{
 		width: 27%;
+		max-width: 360px;
 		height: 100%;
 		position: fixed;
 		top: 0;
@@ -400,12 +401,11 @@ a{
 	padding: 5px;
 	margin: 5px;
 }
-h1.post-section{
+.post-section h1{
 	padding: 5px;
 	margin: 5px;
 	font-size: 18px;
 }
-p.post-section{
-	text-indent: 2em;
+.post-section p{
 	line-height: 23px;
 }
