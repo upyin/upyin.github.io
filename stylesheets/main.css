@@ -157,7 +157,7 @@ a{
 	.site-name,.site-motto{
 		text-align: center;
 		color: #138CB1;
-		display: inline-block;
+		display: block;
 	}
 	.site-name{
 		font-size: 20px;
