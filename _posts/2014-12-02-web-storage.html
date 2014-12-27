@@ -120,9 +120,42 @@ category: 总结、技术
 </section>
 <section class="post-section">
 	<h1>sessionStorage</h1>
-	<p></p>
+	<p>sessionStorage同localStorage一样是HTML5中的新技术，但不同点在于，localStorage用于本地持久化的存储，而sessionStorage用于一个会话中的数据存储，当会话结束时，数据将被销毁。</p>
+	<p>sessionStorage的使用同localStorage一样，可以使用setItem(),getItem(),removeItem()和clear()方法进行存取和删除数据。</p>
 </section>
 <section class="post-section">
-	<h1>web database</h1>
-	<p></p>
+	<h1>Web SQL Database</h1>
+	<p>Web SQL Database用于本地的数据库存储。不同于localSotrage的地方在于其能够像普通数据库一样使用sql语句进行查询和建立关系型数据库。但是目前浏览器对Web SQL Database的支持不是很好，尤其是手机上，基本都不支持Web SQL Database。下面简单的介绍下Web SQL Database的使用。</p>
+	<p>判断浏览器是否支持Web SQL Database.</p>
+	<pre>
+	<code class="language-javascript">
+	if(window.openDatabase){
+		//支持
+	}else{
+		//不支持
+	}
+	</code>
+	</pre>
+	<p>建立数据库连接</p>
+	<pre>
+	<code class="language-javascript">
+	db = openDatabase('dbName','version','description',size);
+	</code>
+	</pre>
+	<p>以上代码创建了一个数据库对象db,名称是dbName,版本号(1.0),描述信息和估计大小值。</p>
+	<p>执行查询操作</p>
+	<pre>
+	<code class="language-javascript">
+	db.transaction(
+		function(transaction){
+			transaction.executeSql(
+				'select * from tableName where name=?',		//sql语句的字符串
+				['abc'],									//插入到查询中问好所在处的字符串数据
+				function(result){},							//成功时执行的函数
+				function(tx,error){}						//失败时执行的函数
+			);
+		}
+	);
+	</code>
+	</pre>
 </section>
