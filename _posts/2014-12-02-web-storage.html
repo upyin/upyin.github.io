@@ -16,7 +16,7 @@ category: 总结、技术
 	<h3>cookie的不可跨域名性</h3>
 	<p>cookie是不可跨域名来访问的，因此谷歌的cookie百度网站是访问不到的，同样的百度的cookie谷歌也访问不到的。这就保证了cookie的安全性，以防止恶意的网站获取其他网站的cookie用于非法的目的。</p>
 	<h3>cookie的小容量性</h3>
-	<p>cookie的大小基本在40k左右，因此不宜在cookie中存储太多的信息，cookie应该小而精，以减少每次http请求时的流量和耗时。</p>
+	<p>cookie的大小基本在4k左右，因此不宜在cookie中存储太多的信息，cookie应该小而精，以减少每次http请求时的流量和耗时。</p>
 	<h3>cookie的使用</h3>
 	<p>cookie是以键／值对的方式进行存储的。一般在cookie中存储，cookie名，值，过期时间，作用域。</p>
 	<pre>
@@ -76,7 +76,47 @@ category: 总结、技术
 </section>
 <section class="post-section">
 	<h1>localStorage</h1>
-	<p></p>
+	<p>localStorage作为当下最流行的web离线应用的存储方案，在于其大容量的存储特性，和永久不会过期的特性。localStorage是本地存储中使用最为流行的方式之一，现在的主流浏览器均已支持，包括手机浏览器也均已支持。下面说说它的特性以及使用方法。</p>
+	<h3>大容量性</h3>
+	<p>localStorage的存储容量一般在5M左右。用来存储离线应用的数据已经绰绰有余了。</p>
+	<h3>永久不会过期</h3>
+	<p>除非javascript中进行删除操作，否则localStorage将永久不会过期。</p>
+	<h3>localStorage的使用</h3>
+	<p>判断浏览器是否支持localStorage</p>
+	<pre>
+	<code class="language-javascript">
+	if(window.localStorage){
+		//支持
+	}else{
+		//不支持
+	}
+	</code>
+	</pre>
+	<p>localStorage是以键／值对的方式存储的</p>
+	<pre>
+	<code class="language-javascript">
+	//存储
+	window.localStorage.name = value;
+	window.localStorage['name'] = value;
+	window.localStorage.setItem('name', value);
+
+	//获取
+	var value = window.localStorage.name;
+	var value = window.localStorage['name'];
+	var value = window.localStorage.getItem('name');
+
+	//删除某个localStorage键值
+	window.localStorage.removeItem('name');
+	//删除所有键值
+	window.localStorage.clear();
+
+	//key()方法用于便利localStorage的键
+	var storage = window.localStorage;
+	for(var i=0; i<storage.length; i++){
+		console.log(storage.key(i)+":"+storage.getItem(storage.key(i)));
+	}
+	</code>
+	</pre>
 </section>
 <section class="post-section">
 	<h1>sessionStorage</h1>
