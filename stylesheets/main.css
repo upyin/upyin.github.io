@@ -1,11 +1,11 @@
-@CHARSET "utf-8";
+@charset "utf-8";
 /*初始化样式*/
 *{
-	font-family:"Microsoft YaHei","微软雅黑",SimSun,"宋体",Helvetica,Tahoma,Arial,STXihei,"华文细黑",Heiti,"黑体",sans-serif;
+	font-family:"PingFang Medium","PingFang SC","Source Han Sans";
 }
 html{
 	color:#000;
-	background:#FFF;
+	background:#fff;
 }
 body,div,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,blockquote,th,td{
 	margin:0;
@@ -230,7 +230,7 @@ a{
 		font-size: 23px;
 		margin-bottom: 10px;
 	}
-	.aboutme ul li,.connect ul li,.statement p{
+	.about-me ul li,.connect ul li,.statement p{
 		padding-left: 15px;
 		font-size: 18px;
 		margin-bottom: 5px;
@@ -365,7 +365,7 @@ a{
 		font-size: 20px;
 		margin-bottom: 10px;
 	}
-	.aboutme ul li,.connect ul li,.statement p{
+	.about-me ul li,.connect ul li,.statement p{
 		padding-left: 15px;
 		font-size: 14px;
 		margin-bottom: 5px;
