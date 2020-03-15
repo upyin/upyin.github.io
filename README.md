@@ -12,4 +12,4 @@ markdown: kramdown          #模版使用kramdown
 
 permalink: /blog/:title 	#url格式
 
-highlighter: pygments       #语法高亮
+highlighter: rouge       #语法高亮
