@@ -288,7 +288,7 @@ a{
 		font-size: 18px;
 		display: inline-block;
 	}
-	.site-ul > li:nth-child(2) {
+	.site-ul > a:nth-child(2) li {
 		margin: 0 8%;
 	}
 	.site-ul li.selected{
