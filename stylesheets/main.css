@@ -287,7 +287,9 @@ a{
 		color: #FFF;
 		font-size: 18px;
 		display: inline-block;
-		margin-right: 8%;
+	}
+	.site-ul > li:nth-child(2) {
+		margin: 0 8%;
 	}
 	.site-ul li.selected{
 		color: #E01E43;
