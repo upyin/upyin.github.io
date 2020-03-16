@@ -238,6 +238,9 @@ a{
 		color: #888;
 		margin-top: 70px;
 	}
+	.contact-footer{
+		text-align: center;
+	}
 	/*webApp styles*/
 	.webapp{
 		color: #999;
@@ -382,6 +385,10 @@ a{
 		font-size: 12px;
 		color: #888;
 		margin-top: 50px;
+	}
+	.contact-footer{
+		font-size: 10px;
+		text-align: center;
 	}
 	/*webApp styles*/
 	.webapp{
