@@ -87,7 +87,6 @@ a{
 	/*header styles*/
 	.site-header{
 		width: 27%;
-		max-width: 360px;
 		height: 100%;
 		position: fixed;
 		top: 0;
@@ -171,7 +170,6 @@ a{
 	}
 	/*default styles*/
 	.page-content{
-		width: 73%;
 		margin-left: 27%;
 	}
 	.wrap{
@@ -244,6 +242,14 @@ a{
 	.webapp{
 		color: #999;
 		font-size: 12px;
+	}
+}
+@media screen and (min-width: 1333px){
+	.site-header {
+		width: 360px;
+	}
+	.page-content {
+		margin-left: 360px;
 	}
 }
 @media screen and (max-width: 600px){
