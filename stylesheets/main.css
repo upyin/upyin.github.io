@@ -220,6 +220,28 @@ a{
 		text-align: left;
 		font-size: 14px;
 	}
+	/*site-footer*/
+	.site-footer {
+		position: fixed;
+		right: 40px;
+		bottom: 40px;
+	}
+	.site-footer .qrcode {
+		width: 70px;
+		height: 70px;
+		border:10px solid #ccc;
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;
+		background-image: url(../images/qrcode.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.site-footer .qrcode:hover {
+		transform-origin: 100% 100%;
+		transform: scale(1.8);
+	}
 	/*contact styles*/
 	.contact section{
 		margin-bottom: 35px;
@@ -371,6 +393,15 @@ a{
 		text-align: left;
 		font-size: 15px;
 	}
+	/*site-footer*/
+	.site-footer .qrcode {
+		width: 256px;
+		height: 93px;
+		margin: 0 auto;
+		background-image: url(../images/qrcode-detail.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
 	/*contact styles*/
 	.contact section{
 		margin-bottom: 35px;
@@ -383,6 +414,9 @@ a{
 		padding-left: 15px;
 		font-size: 14px;
 		margin-bottom: 5px;
+	}
+	.contact-qrcode img {
+		width: 80%;
 	}
 	.label{
 		font-size: 12px;
@@ -400,21 +434,6 @@ a{
 		color: #999;
 		font-size: 12px;
 	}
-}
-/*footer styles*/
-.site-footer{
-	width: 100%;
-	height: 30px;
-	background-color: #000;
-	color: #FFF;
-	text-align: center;
-}
-.footer-ul{
-	width: 100%;
-}
-.footer-ul li{
-	line-height: 30px;
-	display: inline-block;
 }
 /*post blog styles*/
 .post-section{
