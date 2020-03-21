@@ -9,4 +9,4 @@ tag: "尹上升，博客，前端，技术分享，javascript，upyin，upyins�
 markdown: kramdown          #模版使用kramdown
 permalink: /blog/:title 	#url格式
 
-highlighter: rouge       #语法高亮
+highlighter: prismjs       #语法高亮

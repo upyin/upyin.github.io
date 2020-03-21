@@ -5,7 +5,7 @@ hclass1: selected
 <div class="home">
   <ul class="posts">
     {% for post in site.posts %}
-      <li><a class="post-link" href="{{ post.url }}">{{ post.title }}</a><span class="post-des">{{ post.category }}/{{ post.date | date: "%b %-d, %Y" }}</span></li>
+      <li><a class="post-link" href="{{ post.url }}">{{ post.title }}</a><span class="post-des">{{ post.category }}/{{ post.date | date: "%b %d, %Y" }}</span></li>
     {% endfor %}
   </ul>
 </div>
