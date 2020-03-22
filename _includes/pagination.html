@@ -1,0 +1,14 @@
+<!-- 分页器 -->
+<nav class="pagination">
+{% if paginator.previous_page %}
+    <span class="pagination-prev"><a href="{{ paginator.previous_page_path }}">«</a></span>
+{% else %}
+    <span class="pagination-prev no-pagination"><a>«</a></span>
+{% endif %}
+    <span class="pagination-count"><span>{{ paginator.page }}</span> of {{ paginator.total_pages }}</span>
+{% if paginator.next_page %}
+    <span class="pagination-next"><a href="{{ paginator.next_page_path }}">»</a></span>
+{% else %}
+    <span class="pagination-next no-pagination"><a>»</a></span>
+{% endif %}
+</nav>

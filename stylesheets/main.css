@@ -98,7 +98,7 @@ a{
 }
 
 /*custom styles*/
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px){ /* PC */
 	/*header styles*/
 	.site-header{
 		width: 27%;
@@ -295,7 +295,7 @@ a{
 		margin-left: 360px;
 	}
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){ /* mobile */
 	/*header styles*/
 	.site-header{
 		width: 100%;
@@ -462,4 +462,26 @@ a{
 }
 .post-section p{
 	line-height: 23px;
+}
+/*pagination*/
+.pagination {
+	text-align: center;
+	font-size: 18px;
+	color: #333333;
+	margin-top: 80px;
+}
+.pagination a {
+	color: #333333;
+}
+.no-pagination a {
+	color: #999999;
+}
+.pagination-prev a {
+	margin-right: 20px;
+}
+.pagination-next a {
+	margin-left: 20px;
+}
+.pagination-count span {
+	color: #666666;
 }

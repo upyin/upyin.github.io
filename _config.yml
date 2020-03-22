@@ -6,7 +6,12 @@ description: "尹上升博客。专注前端，分享技术。"
 tag: "尹上升，博客，前端，技术分享，javascript，upyin，upyins，yinup，yinups"
 
 # Build settings
-markdown: kramdown          #模版使用kramdown
-permalink: /blog/:title 	#url格式
+markdown: kramdown            # 模版使用kramdown
+permalink: /blog/:title 	    # url格式
 
-highlighter: rouge       #语法高亮,github支持,实际使用prismjs
+highlighter: rouge            # 语法高亮,github支持,实际使用prismjs
+
+# 分页
+plugins: [jekyll-paginate]
+paginate: 10                  # 每页有几篇文章
+paginate_path: "page:num"     # 分页路径
