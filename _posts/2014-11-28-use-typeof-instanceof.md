@@ -39,11 +39,11 @@ Boolean类型的值有两个，true和false。这两个值与数字值不是一�
 
 ```markup
 数据类型		转换为true的值		  转换为false的值
-Boolean        true				    alse
-String		   任何非空字符串		  空字符串
-Number		   任何非0数字值		  0和NaN
-Object         任何对象 	     	 null
-Undefined      n/a(不适用)			 undefined
+Boolean        true                alse
+String         任何非空字符串        空字符串
+Number         任何非0数字值         0和NaN
+Object         任何对象             null
+Undefined      n/a(不适用)          undefined
 ```
 
 ## Number类型
@@ -53,11 +53,11 @@ Number类型用来表示整数和浮点数值，以及NaN。在javascript中任�
 javascript中有一个isNaN()函数，这个函数接受一个参数，该参数可以是任何类型，而函数会返回这个值是否不为数值。即任何不能转换为数值的参数输入，都会返回true。
 
 ```javascript
-console.log(isNaN(NaN));	//true
-console.log(isNaN(10));		//false
-console.log(isNaN("10"));	//false
-console.log(isNaN("blue"));	//true
-console.log(isNaN(true));	//false
+console.log(isNaN(NaN));    //true
+console.log(isNaN(10));	    //false
+console.log(isNaN("10"));   //false
+console.log(isNaN("blue")); //true
+console.log(isNaN(true));   //false
 ```
 
 Number()、parseInt()、parseFloat()，这三个函数可以把非数值，但是能转换为数值的数据类型转换为数值。其中，Number()函数对任何类型都可以使用，而parseInt()和parseFloat()只能传入字符串类型的参数。
@@ -83,9 +83,9 @@ parseInt()能够将正确的十六进制或八进制的数字字符串转换为�
 parseInt()有第二个参数，告诉函数，第一个参数，以第二个参数的标准转换为十进制的数值。
 
 ```javascript
-parseInt("10",2);		//2(按二进制解析)
-parseInt("10",8);		//8(按八进制解析)
-parseInt("AF",16);		//175(按十六进制解析)
+parseInt("10",2);       //2(按二进制解析)
+parseInt("10",8);       //8(按八进制解析)
+parseInt("AF",16);      //175(按十六进制解析)
 ```
 
 parseFloat()函数，将十进制的浮点数的字符串转换为数值型的浮点数。parseFloat()函数会忽略前导的0。
@@ -98,11 +98,11 @@ String类型用于表示由零或多个16位Unicode字符组成的字符序列�
 
 ```javascript
 var num = 10;
-console.log(num.toString());		//"10"
-console.log(num.toString(2));		//"1010"
-console.log(num.toString(8));		//"12"
-console.log(num.toString(10));		//"10"
-console.log(num.toString(16));		//"a"
+console.log(num.toString());        //"10"
+console.log(num.toString(2));       //"1010"
+console.log(num.toString(8));       //"12"
+console.log(num.toString(10));      //"10"
+console.log(num.toString(16));      //"a"
 ```
 
 第二种方式，使用String()函数转换为字符串。这个函数能够将任何类型的值转换为字符串，包括null和undefined。String()函数对其他类型的转换同上面的toString()方法，而对于null，会转换为“null”，对于undefined会转换为“undefined”。
@@ -139,14 +139,14 @@ instanceof用于判断一个变量是否为某个对象的实例。
 
 ```javascript
 var a = new Array();
-console.log(a instanceof Array);	//true
-console.log(a instanceof Object);	//true
+console.log(a instanceof Array);     //true
+console.log(a instanceof Object);    //true
 ```
 
 因为Array是Object的子类。那么如何来判断某个变量是对象还是数组呢？
 
 ```javascript
-console.log(a instanceof Array);	//返回true则变量是数组，返回false则判断下一条
-console.log(a instanceof Object);	//返回true则是对象不是数组，返回false则既不是对象也不是数组
+console.log(a instanceof Array);     //返回true则变量是数组，返回false则判断下一条
+console.log(a instanceof Object);    //返回true则是对象不是数组，返回false则既不是对象也不是数组
 ```
 
