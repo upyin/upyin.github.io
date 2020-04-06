@@ -37,14 +37,13 @@ console.log(undefined == null);//true
 
 Boolean类型的值有两个，true和false。这两个值与数字值不是一回事，因此true不一定等于1，而false不一定等于0。可以调用类型转换函数(Boolean())讲任意类型的值转换为对应的Boolean类型的值：
 
-```markup
-数据类型		转换为true的值		  转换为false的值
-Boolean        true                alse
-String         任何非空字符串        空字符串
-Number         任何非0数字值         0和NaN
-Object         任何对象             null
-Undefined      n/a(不适用)          undefined
-```
+| 数据类型  | 转换为true的值 | 转换为false的值 |
+| --------- | -------------- | --------------- |
+| Boolean   | true           | false           |
+| String    | 任何非空字符串 | 空字符串        |
+| Number    | 任何非0数字值  | 0和NaN          |
+| Object    | 任何对象       | null            |
+| Undefined | n/a（不适用）  | undefined       |
 
 ## Number类型
 
