@@ -30,7 +30,7 @@ category: 总结、技术
 
 冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。
 
-![](/images/20150405sortalgorithm/bubble-sort.gif)
+![](/images/20151109sortalgorithm/bubble-sort.gif)
 
 ### 算法描述：
 
@@ -66,7 +66,7 @@ function bubbleSort(arr) {
 
 选择排序(Selection-sort)是一种简单直观的排序算法。它的原理是每次在未排序的序列中寻找最小（大）的元素，然后将其存放到已排序序列中的末尾，以此类推，直到所有元素均排序完毕。 
 
-![](/images/20150405sortalgorithm/selection-sort.gif)
+![](/images/20151109sortalgorithm/selection-sort.gif)
 
 ### 算法描述
 
@@ -103,7 +103,7 @@ function selectionSort(arr) {
 
 插入排序（Insertion Sort）是一种最简单直观的排序算法。它的工作原理是通过构建有序的序列，对于未排序的数据，在已排序的序列中从后向前扫描，找到相应位置并插入。
 
-![](/images/20150405sortalgorithm/insertion-sort.gif)
+![](/images/20151109sortalgorithm/insertion-sort.gif)
 
 ### 算法描述
 
@@ -136,7 +136,7 @@ function insertionSort(arr) {
 
 希尔排序（Shell Sort）是简单插入排序的改进版。它与插入排序的不同之处在于，它会优先比较距离较远的元素。希尔排序又叫缩小增量排序。
 
-![](/images/20150405sortalgorithm/shell-sort.gif)
+![](/images/20151109sortalgorithm/shell-sort.gif)
 
 ### 算法描述
 
@@ -173,7 +173,7 @@ function shellSort(arr) {
 
 快速排序（Quick Sort）的基本思想：通过一趟排序将待排记录分隔成独立的两部分，其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。
 
-![](/images/20150405sortalgorithm/quick-sort.gif)
+![](/images/20151109sortalgorithm/quick-sort.gif)
 
 ### 算法描述
 
@@ -225,7 +225,7 @@ function swap(arr, i, j) {
 
 堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。
 
-![](/images/20150405sortalgorithm/heap-sort.gif)
+![](/images/20151109sortalgorithm/heap-sort.gif)
 
 ### 算法描述
 
