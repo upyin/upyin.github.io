@@ -39,5 +39,7 @@ CSS的使用方式有三种，内联、内嵌、外联。
 
 在CSS中，选择器是一种模式，用于选择需要添加样式的元素。
 
-[查看最新的CSS选择器-w3school](https://www.w3school.com.cn/cssref/css_selectors.asp)
+> 注：
+>
+> [1] [查看最新的CSS选择器-w3school](https://www.w3school.com.cn/cssref/css_selectors.asp)
 

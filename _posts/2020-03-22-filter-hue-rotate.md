@@ -44,8 +44,9 @@ filter: hue-rotate(3.142rad);
 现代浏览器基本都支持。
 
 
-
-> [CSS filter:hue-rotate色调旋转滤镜实现按钮批量生产](https://www.zhangxinxu.com/wordpress/2018/11/css-filter-hue-rotate-button/)
-
-> [hue-rotate() CSS层叠样式表 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter-function/hue-rotate)
+> 注：
+>
+> [1] [CSS filter:hue-rotate色调旋转滤镜实现按钮批量生产](https://www.zhangxinxu.com/wordpress/2018/11/css-filter-hue-rotate-button/)
+>
+> [2] [hue-rotate() CSS层叠样式表 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter-function/hue-rotate)
 
